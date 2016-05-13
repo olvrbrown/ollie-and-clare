@@ -1,0 +1,220 @@
+.page-section {
+	
+	&.dark-text {
+		background-color: #fff;
+	}
+	
+	&.light-text {
+		background-color: $text-light;
+	}
+	
+	overflow: hidden;
+	padding: 100px 60px;
+	
+	
+	@media screen and (max-width: $break-small) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	
+	p {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	&.blank {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	
+	
+}
+
+
+.site-footer {
+	
+	.page-section {
+		
+		padding-top: 40px;
+		padding-bottom: 40px;
+		
+	}
+	
+	.footer-nav-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}
+
+
+.blocks {
+	
+	margin: 0 auto;
+	padding: 30px 0 0;
+	
+	max-width: 800px;
+	
+	&.wide {
+		max-width: $max-width;
+	}
+	
+	@include clearfix;
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.block {
+	
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	padding: 1em;
+	
+	margin-bottom: 2em;
+	
+}
+
+.block.match-height {
+	
+	display: flex;
+	flex-direction: column;
+	
+	&.blog div,
+	> p {
+		flex: 1 0 auto;
+	}
+	
+}
+
+.blocks-4 .block {
+	
+	width: 25%;
+	
+	@media screen and (max-width: $break-large) {
+		width: 50%;
+	}
+	
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+	}
+	
+}
+
+.blocks-3 .block {
+	
+	width: 33%;
+	
+	@media screen and (max-width: $break-large) {
+		width: 100%;
+	}
+	
+}
+
+.blocks-2 .block {
+	
+	width: 50%;
+	
+	@media screen and (max-width: $break-large) {
+		
+		width: 100%;
+		
+	}
+	
+}
+
+.blocks-2.blocks-nobreak .block {
+	width: 50%;
+}
+
+
+
+
+
+.page-section.with-image {
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	transition: opacity 500ms ease-in-out;
+	
+	&.image-ready {
+		opacity: 0;
+	}
+	
+	&.b-loaded,
+	&.b-error {
+		opacity: 1;
+	}
+	
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);
+	
+}
+
+
+
+
+.page-header {
+	
+	position: relative;
+	
+	height: 100px;
+	
+	padding: 0;
+	padding-bottom: 33%;
+	
+	@media screen and (max-width: $break-large) {
+		height: 200px;
+	}
+	
+	@media screen and (max-width: $break-small) {
+		height: 300px;
+	}
+	
+	.page-headline {
+		
+		position: absolute;
+		bottom: 30%;
+		width: 100%;
+		
+		
+		@media screen and (max-width: $break-small) {
+			bottom: 20%;
+		}
+		
+		h1 {
+			margin: 0 0.2em;
+		}
+		
+	}
+	
+}
+
+.page-header-small {
+	
+	height: 240px;
+	
+	padding-bottom: 0;
+	
+	@media screen and (max-width: $break-small) {
+		height: 340px;
+	}
+	
+	.page-headline {
+		
+		bottom: 40px;
+		
+		/*
+		@media screen and (max-width: $break-small) {
+			bottom: 20%;
+		}
+		*/
+		
+	}
+	
+}

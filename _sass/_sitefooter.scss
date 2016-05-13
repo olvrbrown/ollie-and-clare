@@ -1,0 +1,36 @@
+.page-section.footer-logo {
+	background-color: $text-mid;
+}
+
+.footer-logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+.logo-text,
+.logo-byline {
+	font-family: $font-header;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 0.8;
+	margin: 0.2em;
+	padding: 0 0.5em 0.2em;
+}
+
+.logo-text {
+	font-size: 2em;
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+	
+	
+	span {
+		position: relative;
+		top: 0.1em;
+	}
+	
+}
+
+
+.footer-nav {
+	margin-top: -20px;
+}

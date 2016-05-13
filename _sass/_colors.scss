@@ -1,0 +1,30 @@
+html {
+	color: $text-dark;
+}
+
+.dark-text {
+	
+	color: $text-dark;
+	
+	p {
+		color: $text-light;
+	}
+	
+	p.lead,ul,ol {
+		color: $text-mid;
+	}
+	
+}
+
+
+
+.light-text {
+	
+	color: #fff;
+	
+	p {
+		color: $text-beige;
+	}
+	
+}
+

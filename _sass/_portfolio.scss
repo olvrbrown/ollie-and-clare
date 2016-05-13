@@ -1,0 +1,99 @@
+.project {
+	
+	max-width: $max-width;
+	
+	position: relative;
+	margin: 0 auto;
+	
+	.project-info {
+		
+		position: absolute;
+		right: 1em;
+		
+		width: 200px;
+		
+		h3 {
+			padding: 0;
+			margin: 1em 0 0;
+		}
+		
+		p {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		@media screen and (max-width: $break-xlarge) {
+			
+			position: static;
+			width: 100%;
+			margin-bottom: 3em;
+			
+		}
+		
+	}
+	
+	.project-details {
+		
+		padding-right: 40px;
+		margin-right: 240px;
+		border-right: solid 1px;
+		
+		@media screen and (max-width: $break-xlarge) {
+			
+			padding: 0;
+			margin: 1em 0;
+			border-right: none;
+			
+		}
+		
+	}
+	
+	p {
+		margin-left: 0;
+	}
+	
+}
+
+.project-images figure {
+	
+	margin: 0;
+	padding: 0;
+	
+	text-align: center;
+	
+	a {
+		display: block;
+		margin: 1em 1em 1em 0;
+		
+		@media screen and (max-width: $break-xlarge) {
+			margin: 1em 0;
+		}
+		
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	
+}
+
+.project-images .block {
+	@media screen and (max-width: $break-xlarge) {
+		width: 100%;
+	}
+}
+
+.project-images figcaption {
+	@include visuallyhidden;
+}
+
+
+// over-ride caption layout
+
+.pswp__caption__center {
+	max-width: none !important;
+	margin: 0 !important;
+	text-align: center !important;
+ }
+

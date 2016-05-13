@@ -1,0 +1,50 @@
+form {
+	max-width: 600px;
+	margin: 1em auto;
+}
+
+.field {
+	border: solid 1px #fff;
+	position: relative;
+	padding: 20px 20px 20px 100px;
+	margin: 20px 0;
+}
+
+.field.st {
+	
+	@include visuallyhidden;
+	
+}
+
+input,
+textarea {
+	background-color: transparent;
+	border: none;
+	outline: none !important;
+	width: 100%;
+	font-size: 0.875em;
+}
+
+textarea {
+	height: 10em;
+}
+
+input[type=submit] {
+	width: auto;
+	font-family: $font-header;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+label {
+	font-size: 0.875em;
+	width: 80px;
+	text-align: left;
+	position: absolute;
+	top: 22px;
+	left: 20px;
+}
+
+.light-text label {
+	color: $text-beige;
+}

@@ -1,0 +1,19 @@
+.message {
+	border: solid 2px $message-default;
+	padding: 1em;
+}
+
+.success {
+	color: $message-success;
+	border-color: $message-success;
+}
+
+.warning {
+	color: $message-warning;
+	border-color: $message-warning;
+}
+
+.error {
+	color: $message-error;
+	border-color: $message-error;
+}

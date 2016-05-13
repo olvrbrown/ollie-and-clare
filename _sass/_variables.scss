@@ -1,0 +1,52 @@
+/******* BREAK POINTS *******/
+
+$max-width: 1080px;
+
+$break-xlarge: 860px;
+$break-large: 710px;
+$break-small: 560px;
+
+
+
+/******* COLORS *******/
+
+$text-dark: #4E525D;
+$text-mid: #687389;
+$text-light: #B5B8BF;
+
+$text-beige: #ECEAED;
+
+$feat-yellow: #F5BD09;
+$feat-paleblue: #B8D3C0;
+$feat-darkblue: #1A535C;
+$feat-orange: #EF7C0C;
+
+$message-default: #4E525D;
+$message-success: #46AC46;
+$message-warning: #333333;
+$message-error: #FF2424;
+
+
+
+
+/******* FONTS *******/
+
+$font-header: 'Amatic SC';
+$font-body: Georgia;
+$font-nav: 'Lato';
+
+
+
+.site-logo.debug {
+	
+	outline: solid red 1px;
+	
+	@media screen and (max-width: $break-large) {
+		outline: solid yellow 1px;
+	}
+	
+	@media screen and (max-width: $break-small) {
+		outline: solid lime 1px;
+	}
+	
+}

@@ -1,0 +1,58 @@
+.site-header {
+	
+	position: relative;
+	
+	padding-bottom: 1em;
+	margin-bottom: 4em;
+	
+	background-color: rgba(0,0,0,0.1);
+	@include clearfix;
+	
+	@media screen and (min-width: $break-large + 1) {
+		
+		height: 60px;
+		
+		.site-logo {
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			
+		}
+		
+		.site-nav {
+			position: absolute;
+			top: 1em;
+			right: 1em;
+			margin-top: 8px;
+		}
+		
+	}
+	
+	@media screen and (min-width: $break-small + 1) and (max-width: $break-large) {
+		
+		.site-logo,
+		.site-nav {
+			margin-top: 1em;
+		}
+		
+	}
+	
+	
+	@media screen and (max-width: $break-small) {
+		
+		.site-logo {
+			padding: 1em;
+			float: left;
+			position: relative;
+			top: 24px;
+		}
+		
+		.site-nav {
+			padding: 1em;
+			float: right;
+			text-align: right;
+		}
+		
+	}
+	
+}
