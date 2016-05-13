@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="">
+		
+		{% include head.html %}
+		
+	<body>
+		
+		{% include header.html %}
+		
+		<section class="page-section dark-text">
+			
+			<h2>{{ page.title }}</h2>
+			
+			{{ content }}
+			
+			
+			
+			<div class="blocks wide blocks-3 blog-posts">
+			
+			{% for project in site.architecture-portfolio reversed %}
+				
+				<article class="block blog match-height">
+					
+					<a href="{{ project.url }}">
+						<img src="/images/portfolio-thumbs/{{ project.thumbnail }}.jpg" alt="{{ project.title }}">
+					</a>
+					
+					<div> 
+						
+						<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+						
+						<p>{{ project.excerpt }}</p>
+						
+						<footer class="date">{{ project.date | date: "%d %b %Y" }}</footer>
+						
+					</div>
+					
+				</article>
+				
+			{% endfor %}
+			
+			
+		</section>
+		
+		
+		
+		{% include contact.html %}
+		
+		{% include footer.html %}
+		
+		{% include scripts.html %}
+		
+
+	</body>
+</html>

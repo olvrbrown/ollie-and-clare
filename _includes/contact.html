@@ -1,0 +1,33 @@
+		{% assign contact-image = 'typewriter' %}
+		{% if include.image %}{% assign contact-image = include.image %}{% endif %}
+		
+		<section class="page-section light-text with-image" data-src="/images/backgrounds/{{ contact-image }}.jpg">
+			
+			<h2>Say Hello</h2>
+			
+			<p class="lead">Please use the form below to say hello, tell us what you think of our website, or send us a message.</p>
+			
+			<form class="contact-form" action="/contact/" method="post">
+				
+				<div class="field contact-name">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" maxlength="100">
+				</div>
+				<div class="field contact-email">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" maxlength="255">
+				</div>
+				<div class="field contact-url st">
+					<label for="url">URL</label>
+					<input type="text" name="url" id="url" maxlength="255" value="" tabindex="-1">
+				</div>
+				<div class="field contact-message">
+					<label for="message">Message</label>
+					<textarea name="message" id="message"></textarea>
+				</div>
+				
+				<input type="submit" value="Send">
+				
+			</form>
+			
+		</section>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+		
+		{% include head.html %}
+		
+	<body>
+		
+		{% include header.html %}
+		
+		<section class="page-section dark-text">
+			
+			<h2>{{ page.title }}</h2>
+			
+			{{ content }}
+			
+		</section>
+		
+		
+		
+		
+		
+		
+		<section class="page-section light-text with-image" data-src="/images/backgrounds/ruler.jpg">
+			
+			<h2>Skills</h2>
+			
+			<p class="lead">Clare is an enthusiastic, organised person who enjoys working as part of a team and helping others to reach their potential. She has excellent experience in working with complex clients, early design development, planning, and running projects during the construction stage.</p>
+			
+			<div class="blocks blocks-4 circles">
+				
+				<div class="block">
+					
+					<div class="circle paleblue">
+						<img src="/images/icons/architecture.png" height="100" width="100" alt="Architecture">
+					</div>
+					
+					<h3>Drawing</h3>
+					<p>Clare is proficient in AutoCAD drawing software, creating drawings of a high standard that are clear and easy to read. She enjoys using Adobe Photoshop to create presentation drawings as well as drawing by hand.</p>
+					
+				</div>
+				
+				<div class="block">
+					
+					<div class="circle paleblue">
+						<img src="/images/icons/architecture.png" height="100" width="100" alt="Architecture">
+					</div>
+					
+					<h3>Modelling</h3>
+					<p>Clare is skilled in using Sketchup to create 3D models, and can utilise V-Ray to create high quality renders. She is in the process of learning to use Revit and hopes to add to her skills in this over the next few months. </p>
+					
+				</div>
+				
+				<div class="block">
+					
+					<div class="circle paleblue">
+						<img src="/images/icons/architecture.png" height="100" width="100" alt="Architecture">
+					</div>
+					
+					<h3>Design</h3>
+					<p>Clare is an accomplished graphic designer and has been responsible for design at JBKS Architects since she started in 2010. This includes promotional material for clients, marketing for the office, presentations and tender submissions. She is skilled in Adobe Photoshop, InDesign and is currently learning Illustrator. </p>
+					
+				</div>
+				
+				<div class="block">
+					
+					<div class="circle paleblue">
+						<img src="/images/icons/architecture.png" height="100" width="100" alt="Architecture">
+					</div>
+					
+					<h3>Communication</h3>
+					<p>Working primarily with churches has given Clare excellent written, verbal and visual communication skills with complex clients. She enjoys finding ways to express herself concisely and clearly, both with clients and with those she works alongside. </p>
+					
+				</div>
+				
+			</div>
+			
+			<p class="lead">Clare has worked throughout the RIBA workstages, with significant experience in job-winning, early design stages and preparing a project for planning. She has helped JBKS Architects to win a number of jobs, and has been fundamental in developing office processes, branding and good project management. She enjoys working with others in the office to produce high-quality work and working with clients to develop designs that meet their needs. </p>
+			
+		</section>
+		
+		
+		
+		
+		
+		
+		<section class="page-section dark-text">
+			
+			<h2>Portfolio</h2>
+			
+			<p class="lead">The projects on the website are a snapshot of Clare's design work from her undergraduate and master's degrees, as well as projects she has worked on with JBKS Architects. If you would like more information on the projects she is currently working on please contact us for more information, as some of these are sensitive in nature and cannot be put in the public domain.</p>
+			
+			<div class="blocks wide blocks-3 blog-posts">
+				
+				{% for project in site.architecture-portfolio reversed %}
+				
+				<article class="block blog match-height">
+					
+					<a href="{{ project.url }}">
+						<img src="/images/portfolio-thumbs/{{ project.thumbnail }}.jpg" alt="{{ project.title }}">
+					</a>
+					
+					<div> 
+						
+						<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+						
+						<p>{{ project.excerpt }}</p>
+						
+						<footer class="date">{{ project.date | date: "%d %b %Y" }}</footer>
+						
+					</div>
+					
+				</article>
+				
+				{% if forloop.index == 3 %}
+					{% break %}
+				{% endif %}
+				
+				{% endfor %}
+				
+			</div>
+			
+			<div class="button">
+				<a href="/architecture/portfolio/">See more</a>
+			</div>
+			
+		</section>
+		
+		
+		
+		
+		
+		{% include contact.html image="trees" %}
+		
+		{% include footer.html %}
+		
+		{% include scripts.html %}
+		
+
+	</body>
+</html>

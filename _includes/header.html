@@ -1,0 +1,16 @@
+		{% assign header-image = 'desk' %}
+		{% if page.header-image %}{% assign header-image = page.header-image %}{% endif %}
+		
+		{% if page.small-header %}{% assign small-header = true %}{% endif %}
+		
+		<header class="page-header {% if small-header %}page-header-small {% endif %}page-section light-text with-image{% if page.header-image-position %} bg-{{ page.header-image-position }}{% endif %}" data-src="/images/backgrounds/{{ header-image }}.jpg">
+			
+			{% include site-header.html %}
+			
+			<div class="page-headline">
+				
+				<h1>{{ page.section | replace:'&','<span>&</span>' }}</h1>
+				
+			</div>
+			
+		</header>
