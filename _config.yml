@@ -18,5 +18,23 @@ url: "http://ollieandclare.org" # the base hostname & protocol for your site
 sass:
   style: compressed
 
+# Portfolio
+
+collections:
+  architecture-portfolio:
+    output: true
+    permalink: /architecture/portfolio/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: architecture-portfolio
+    values:
+      layout: project
+      section: Architecture Portfolio
+      header-image: architecture
+      header-image-position: btm
+
+
 # Build settings
 markdown: kramdown
