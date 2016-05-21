@@ -2,7 +2,7 @@
 
 title: Woodstock Road Baptist Church
 
-date: 2016-04-16
+date: 2016-05-19
 
 thumbnail: woodstockrd
 image-dir: woodstock

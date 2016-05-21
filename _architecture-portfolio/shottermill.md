@@ -2,7 +2,7 @@
 
 title: St Stephen’s Church, Shottermill
 
-date: 2016-04-01
+date: 2016-05-13
 
 thumbnail: shottermill
 

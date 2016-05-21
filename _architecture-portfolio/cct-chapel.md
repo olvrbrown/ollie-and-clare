@@ -2,7 +2,7 @@
 
 title: "Christian Conference Trust: Chapel"
 
-date: 2015-09-01
+date: 2016-05-17
 
 thumbnail: cctchapel
 

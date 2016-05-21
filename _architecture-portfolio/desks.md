@@ -5,7 +5,6 @@ title: Model Desks
 date: 2009-02-17
 
 thumbnail: desks
-thumbnail: desks
 image-dir: desks
 
 images:
