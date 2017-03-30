@@ -13,7 +13,7 @@ description: "Ollie & Clare: Design, Architecture, Hand-made, Websites"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "http://ollieandclare.org" # the base hostname & protocol for your site
+url: "https://ollieandclare.org" # the base hostname & protocol for your site
 
 sass:
   style: compressed
